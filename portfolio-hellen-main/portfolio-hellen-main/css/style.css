@@ -1,6 +1,7 @@
-/* Imports the Popins font from Google Fonts */
+/* importa a fonte Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* //:root é uma variável global que pode ser usada em qualquer lugar do css */
 :root {
     --main-color: #d58ae1;
     --text-color: #ffffff;
@@ -8,14 +9,13 @@
     --bg-color-02: #323946;
     --color-00: #0000001a;
 
-    /* Extra */
+    /* cores extras */
     --color-01: #999999;
     --color-02: #009539;
     --color-03: #7950f2;
     --color-04: #c00000;
     --color-05: #232323;
 }
-
 
 * {
     margin: 0;
@@ -25,7 +25,6 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-
 }
 
 html {
@@ -49,6 +48,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    /* //z-index serve para sobrepor elementos */
 }
 
 .logo {
@@ -74,9 +74,6 @@ header {
     color: var(--text-color);
     padding: 0.5rem 1rem;
     transition: 0.4s;
-
-    /* border: solid 1px var(--color-02); */
-    /* TEST */
 }
 
 .nav a:hover,
@@ -195,7 +192,6 @@ span {
 .services-box p {
     margin: 0.5rem;
     letter-spacing: 0.1rem;
-    /*N lines...*/
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -258,7 +254,6 @@ span {
 
 .portfolio-layer p {
     margin: 0.2rem 0.5rem;
-    
 }
 
 .portfolio-layer a {
@@ -273,8 +268,7 @@ span {
 
 .portfolio-layer a i {
     font-size: 1.2rem;
-    color: var(--bg-color-02);
-
+    color: var (--bg-color-02);
 }
 
 form {
@@ -298,7 +292,6 @@ form textarea {
 form textarea {
     resize: none;
 }
-
 
 footer {
     display: flex;
@@ -326,7 +319,6 @@ footer {
     color: var(--main-color);
     margin: 1.8rem 0.5rem;
     transition: 0.5s ease;
-    /* margin: 1.8rem 1rem 1.8rem 0; */
 }
 
 .social-media a:hover {
@@ -335,8 +327,7 @@ footer {
     box-shadow: 0 0 0.3rem var(--main-color);
 }
 
-
-/* ===== button ===== */
+/* ===== botão ===== */
 .btn {
     display: inline-block;
     padding: 0.7rem 1.8rem;
@@ -346,7 +337,7 @@ footer {
     font-weight: 600;
     letter-spacing: 0.1rem;
     transition: 0.3s ease;
-    margin-top: 1.2 rem;
+    margin-top: 1.2rem;
 }
 
 .btn:hover {
@@ -356,9 +347,9 @@ footer {
     cursor: pointer;
 }
 
-/* ===== \button ===== */
+/* ===== \fim do botão ===== */
 
-/* ===== menu hamburger ===== */
+/* ===== menu hamburguer ===== */
 .menu-hamburber {
     display: none;
     cursor: pointer;
@@ -386,12 +377,11 @@ footer {
     transform: translate(0, -0.65rem) rotate(45deg);
 }
 
-/* ===== \menu hamburger ===== */
-
+/* ===== \fim menu hamburguer ===== */
 
 /* ===== media queries ===== */
 
-/* Extra Small (xs): Smartphone (portrait) */
+/* Extra Small (xs): Smartphone (retrato) */
 @media (min-width: 0px) {
     .menu-hamburber {
         display: block;
@@ -449,10 +439,8 @@ footer {
     }
 }
 
-/* Small (sm): Smartphone (landscape) */
-
+/* Small (sm): Smartphone (paisagem) */
 @media (min-width: 576px) {
-
     .home-img,
     .about-img {
         width: 65%;
@@ -464,12 +452,8 @@ footer {
     }
 }
 
-
-
-/* Medium (md):Tablet */
-
+/* Medium (md): Tablet */
 @media (min-width: 768px) {
-
     .menu-hamburber {
         display: none;
     }
@@ -488,7 +472,6 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
 
     .home-img,
     .about-img {
@@ -514,12 +497,8 @@ footer {
     }
 }
 
-
-
-/* Large (lg):Notebook */
-
+/* Large (lg): Notebook */
 @media (min-width: 992px) {
-
     .services-container {
         flex-direction: row;
         gap: 1.2rem;
@@ -527,9 +506,7 @@ footer {
 }
 
 /* Extra Large (xl): Desktop */
-
 @media (min-width: 1200px) {
-
     .home-img,
     .about-img {
         max-width: 25%;
