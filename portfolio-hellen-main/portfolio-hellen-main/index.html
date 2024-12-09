@@ -4,29 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Complete Portfolio Hellen</title>
+         <!-- link para conectar ao css -->
         <link rel="stylesheet" href="./css/style.css">
-        <!-- Box icons -->
+        <!-- box de icones-->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-        <!-- Custom css -->
+
+         <!-- usei tags semantanticas para melhorar a acessibilidade do site  -->
     </head>
     <body>
+        <!-- header contém os links para as seções do site, o logo e o menu hamburguer os links levam para cada seção especifica do site -->
         <header>
             <a href="#" class="logo">Portfolio</a>
             <div class="nav">
                 <a href="#home">Home</a>
-                <a href="#services">Service</a>
+                <a href="#services">Formação</a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#contact">Contato</a>
+                <a href="#about">Sobre mim</a>
             </div>
-
+            <!-- // menu responsivo para telas menores -->
             <div class="nav-responsive">
                 <a href="#home">Home</a>
-                <a href="#services">Service</a>
+                <a href="#services">Formação</a>
                 <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#contact">Contato</a>
+                <a href="#about">Sobre mim</a>
             </div>
+
+            <!-- // menu hamburguer serve para abrir o menu responsivo quando clicado no icone de menu -->
             <div class="menu-hamburguer">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
@@ -34,21 +39,22 @@
             </div>
         </header>
 
-        <!-- home section -->
+        <!-- seção home  -->
         <section class="home" id="home">
             <div class="home-contat">
-                <h3>Hello, I'm</h3>
+                <h3>Olá, me chamo</h3>
                 <h1>Hellen Silva</h1>
                 <h3>
-                    Full-Stack
-                    <span>Developer</span>
-                    and
+                    Sou Full-Stack
+                    <span>Developer</span> 
+                    <!-- // span serve para destacar a palavra -->
+                    &
                     <span>Student</span>
                 </h3>
                 <p>
-                    I am currently studying Data Science at UNINTER International University Center and Software Engineering at FIAP. I am excited to share with you some of the projects I have developed during my studies and professional development, which are available here in my portfolio.
+                   Seja bem vindo(a) ao meu portfolio pessoal aqui você encontrará meus projetos, habilidades e um pouco sobre mim.
                 </p>
-
+                <!-- // redireciona para o link da rede social -->
                 <div class="social-media">
                     <a href="https://www.linkedin.com/in/hellen-silva-/" target="_blank">
                         <i class="bx bxl-linkedin"></i>
@@ -63,56 +69,58 @@
             </div>
 
             <div class="btn">
-                <a href="https://www.linkedin.com/in/hellen-silva-/" target="_blank">Download CV</a>
+                <a href="https://www.linkedin.com/in/hellen-silva-/" target="_blank">Visite CV</a>
             </div>
 
         </div>
 
+        <!-- //imagem meramente ilustrativa gerada por inteligencia artificial  -->
         <div class="home-img">
             <img src="./images/file.png" alt="Profile picture">
         </div>
     </section>
-    <!-- /home section -->
-    <!-- service section -->
+    <!-- /fim da seção home -->
+
+    <!-- seção formação-->
     <section class="services" id="services">
         <h2>
-            Our
-            <span>Services</span>
+            Minhas
+            <span>Formações</span>
         </h2>
         <div class="services-container">
             <div class="services-box">
                 <i class="bx bx-code-alt"></i>
-                <h3>Web Development</h3>
+                <h3>Tecnica em Mecatrônica - SENAI</h3>
                 <p>
-                    As a web developer, I'm honing my skills in HTML, CSS, and JavaScript, while also delving into the React.js and AngularJS frameworks to craft dynamic user interfaces. 
+                    Sou formada em técnico em mecatrônica pelo SENAI, onde aprendi automação industrial, programação de CLP, robótica, desenho técnico, C# e C++.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Saiba mais</a>
             </div>
             <div class="services-box">
                 <i class="bx bx-code-curly"></i>
-                <h3>Back-End Development</h3>
+                <h3>Front-End - Ford <'Enter></h3>
                 <p>
-                    As a back-end developer, I'm learning and refining my skills in Python, Java, Django, and Spring Boot. 
+                    Programa de capacitação em desenvolvimento front-end, onde aprendi a desenvolver projetos web utilizando HTML, CSS, JavaScript, React e Angular.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Saiba mais</a>
             </div>
             <div class="services-box">
                 <i class="bx bx-data"></i>
-                <h3>Data Scientist</h3>
+                <h3>Tecnologia em Ciência de dados - UNINTER</h3>
                 <p>
-                    I'm learning Python and Pandas for Data Science and Machine Learning, as well as SQL database and Ethics and Data Privacy principles.
+                    Estou desenvolvendo minhas habilidades em análise de dados, machine learning, big data, inteligência artificial, estatística e desenvolvimento web.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Saiba mais</a>
             </div>
         </div>
     </section>
-    <!-- \service section -->
+    <!-- \Fim da seção formação -->
 
-    <!-- portfolio section -->
+    <!-- seção de projetos pessoais-->
     <section class="portfolio" id="portfolio">
         <h2>
-            Latest
-            <span>Projects</span>
+            Meus
+            <span>Projetos</span>
             <br><br>
         </h2>
         <div class="portfolio-container">
@@ -121,7 +129,7 @@
                 <div class="portfolio-layer">
                     <h4>Flip Clock Project</h4>
                     <p>
-                        Developing this flip clock project with HTML, CSS, and JavaScript helped me enhance my front-end skills by combining structure, styling, and programming logic. I learned to create smooth animations, manipulate the DOM.
+                       Projeto de um relógio digital que exibe a hora, minutos e segundos. O projeto foi desenvolvido em HTML, CSS e JavaScript.
                     </p>
                     <a href="https://hellen-silvaa.github.io/flip-clock/" target="_blank">
                         <i class="bx bx-link-external"></i>
@@ -133,7 +141,7 @@
                 <div class="portfolio-layer">
                     <h4>Senai Shoes</h4>
                     <p>
-                        "Senai Shoes" is an online store dedicated to SENAI students, offering EPI safety footwear for classes. Developed in HTML and CSS under the Ford Enter project, it provides an intuitive interface to facilitate access to safety footwear.
+                        Loja virtual de calçados desenvolvida em HTML, CSS e JavaScript.
                     </p>
                     <a href="https://hellen-silvaa.github.io/Senai-Shoes/" target="_blank">
                         <i class="bx bx-link-external"></i>
@@ -146,7 +154,7 @@
                 <div class="portfolio-layer">
                     <h4>Clínica Médica</h4>
                     <p>
-                        Our website represents a technological clinic committed to providing the highest standard of healthcare to socially vulnerable patients, utilizing artificial intelligence, robots, and cutting-edge technology. 
+                        Site de uma clínica médica fictícia, desenvolvido em HTML, CSS e JavaScript.
                     </p>
                     <a href="https://clinica-medica-sage.vercel.app/" target="_blank">
                         <i class="bx bx-link-external"></i>
@@ -158,7 +166,7 @@
                 <div class="portfolio-layer">
                     <h4>World Cup Project</h4>
                     <p>
-                        The FIFA World Cup website provides live scores, information on groups and matches, and guides on where to watch games. With an intuitive design, it's the ideal destination for soccer fans during the world's most important tournament.
+                        Site de uma copa do mundo fictícia, desenvolvido em HTML, CSS e JavaScript.
                     </p>
                     <a href="https://hellen-silvaa.github.io/Projeto_World_Cup/" target="_blank">
                         <i class="bx bx-link-external"></i>
@@ -168,11 +176,11 @@
             <div class="portfolio-box">
                 <img src="./images/project5.png" alt="logo JavaScript">
                 <div class="portfolio-layer">
-                    <h4>Seven JavaScript Project</h4>
+                    <h4>Pong Game</h4>
                     <p>
-                        Here are 7 JavaScript projects I've developed: Drums, Clock, Climate, Tic-Tac-Toe , Canvas , Quiz , Drag and Drop.
+                        Desenvolvi um jogo de Pong utilizando HTML, CSS e JavaScript. O jogo é uma versão moderna do clássico Pong.
                     </p>
-                    <a href="https://github.com/hellen-silvaa/7_projects_in_7_days" target="_blank">
+                    <a href="https://pong-game-six.vercel.app/" target="_blank">
                         <i class="bx bx-link-external"></i>
                     </a>
                 </div>
@@ -180,24 +188,24 @@
             <div class="portfolio-box">
                 <img src="./images/project6.PNG" alt="Coming Soon Python">
                 <div class="portfolio-layer">
-                    <h4>Coming Soon Python...</h4>
+                    <h4>GreenTrack</h4>
                     <p>
-                        Coming soon, I'll be posting my Python projects here. I'm in the process of learning and developing in this language to produce amazing projects.
-                    </p>
-                    <a href="https://github.com/hellen-silvaa/Curso_de_Python_3-" target="_blank">
+                        Solução de rastreabilidade de hidrogênio verde, que visa garantir o monitoramento do hidrogênio verde produzido. O projeto foi desenvolvido em React, tailwind e typscript.
+                    </p>-
+                    <a href="https://green-track-rho.vercel.app/" target="_blank">
                         <i class="bx bx-link-external"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- \portfolio section -->
+    <!-- \fim da seção de projetos pessoais -->
 
     <!-- contact section -->
     <section class="contact" id="contact">
         <h2>
-            Contact
-            <span>Me!</span>
+            Entre em
+            <span>Contato</span>
         </h2>
         <form>
             <div class="input-box">
@@ -215,42 +223,43 @@
             <button class="btn" type="submit" data-button >
                 Send Message
             </button>
-            <!-- <a href="" class="btn">Send Message</a> -->
         </form>
     </section>
-    <!-- \contact section -->
+    <!-- \fim da seção contato -->
 
 
-    <!-- about section -->
+    <!-- seção sobre mim -->
     <section class="about" id="about">
         <div class="about-img">
             <img src="./images/file.png" alt="About me">
         </div>
         <div class="about-content">
-            <h3>About Me</h3>
+            <h3>Sobre mim</h3>
             <h1>
                 Full-Stack
                 <span>Developer</span>
-                and
-                <span>Student</span>
+                &
+                <span>Estudante</span>
             </h1>
             <p>
-                Since I began my journey in technology, I have always been driven by curiosity and a desire to solve complex problems. This motivation has led me to explore various areas and tools such as JavaScript, HTML, CSS, Python, SQL, Power BI, and Artificial Intelligence, C++. Each project I have developed reflects not only the technical knowledge I have acquired but also my passion for innovation and challenges.
+                Desde que comecei minha jornada na tecnologia, sempre fui movida pela curiosidade e pelo desejo de resolver problemas. Essa motivação me levou a explorar diversas áreas e ferramentas como JavaScript, HTML, CSS, Python, SQL, Power BI e Inteligência Artificial, C++. Cada projeto que desenvolvi reflete não apenas o conhecimento técnico que adquiri, mas também minha paixão por inovação e desafios.
             </p>
             <p>
-                Some of the skills I bring with me include research, teamwork, effective communication, problem-solving, creativity, analysis, and analytical thinking. I have a tremendous willingness to learn and adapt to new situations, always looking for ways to enhance my skills and make meaningful contributions.
+                Algumas das habilidades que trago comigo incluem pesquisa, trabalho em equipe, comunicação eficaz, resolução de problemas, criatividade, análise e pensamento analítico. Tenho muita disposição para aprender e me adaptar a novas situações, sempre buscando maneiras de aprimorar minhas habilidades e fazer contribuições significativas.
             </p>
             <p>
-                Thank you for taking the time to explore my portfolio. I hope the projects presented can demonstrate my dedication and potential. I am eager to explore new opportunities and challenges in the technology field, where I can continue to grow and make a difference.
+                Obrigada por reservar um tempo para explorar meu portfólio. Espero que os projetos apresentados possam demonstrar minha dedicação e potencial. Estou ansiosa para explorar novas oportunidades e desafios no campo da tecnologia, onde posso continuar a crescer e fazer a diferença.
             </p>
             <br>
-            <a href="#" class="btn">Read More</a>
+            <a href="#" class="btn">Saiba mais</a>
         </div>
     </section>
-    <!-- \about section -->
+    <!-- \fim da seção sobre mim -->
     <footer>
         <p>Copyright &copy; 2024 by &lt;/Hellen&gt;. All rights Reserved.</p>
     </footer>
 </body>
+
+<!-- //script JavaScript para conectar o script.js com o HTML -->
 <script src="./js/script.js"></script>
 </html>
